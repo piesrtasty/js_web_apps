@@ -20,3 +20,16 @@ utility functions related to the view.
 		}
 	</script>
 </div>
+
+// Instead separate the presentational logic into helpers like below ...
+
+// helper.js
+var helper = {}
+helper.formatDate = function(){ /* ... */ };
+
+// template.html
+<div>
+	${ helper.formatDate(this.date) }
+</div>
+
+// Additionally all presentational logic is namespaced under the "helper" variable
