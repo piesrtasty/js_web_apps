@@ -24,4 +24,15 @@ destroyUser(user);
 var user = User.find("foo");
 user.destroy();
 
+/*
+
+The first example is not namespaced or OO. If we have another destroy User() function
+defined in our application, the two will conflict. Global variables and functions should
+always be kept to an absolute min. In the second example, the destroy() func is namespaced
+behind User intances, as are all the stored records. This scenario is ideal as we are keeping
+global bars to a minimum, exposing fewer areas to potential conflicts. The code is cleaner
+and can take advantage of inheritance so funcs like destroy() dont have to be defined
+separately on every model.
+
+*/
 
