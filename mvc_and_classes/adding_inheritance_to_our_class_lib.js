@@ -72,4 +72,4 @@ var Cat = new Class(Animal)
 
 // Usage
 var luke = new Cat;
-tommy.breath();
+luke.breath();
