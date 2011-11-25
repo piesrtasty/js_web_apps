@@ -32,7 +32,8 @@ person.save();
 
 However, this syntax is a little convoluted, impractical, and repetitive. Its
 difficult to see, at a glance, a list of your classes static and instance
-properties. Instead, lets create a different way of adding properties to our classes using two functions extend() and include():
+properties. Instead, lets create a different way of adding properties to our
+classes using two functions extend() and include():
 
 */
 
