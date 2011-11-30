@@ -12,7 +12,7 @@ When controllers fetch data from servers or create new records, they wrap them i
 instances. This means that our data is OO, and any funcs or logic defined on the model can
 be called directly on the data.
 
-/*
+*/
 
 // So rather than this:
 
